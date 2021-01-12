@@ -22,16 +22,17 @@
                 padding: 200px 10px;
             }
             .nav-link{
-                background-color: rgba(0,0,0,.4);
-                border: 1px solid white;
+              
+                font-weight: bolder;
                 color: white;
                 margin: 5px;
-                border-radius: 5px;
+               
                 transition: 0.4s;
             }
             .nav-link:hover{
                 transform: scale(1.1);
-                color: white;
+                color: blue;
+                font-weight: bolder;
             }
             .Youtube{
                 color: red;
@@ -48,8 +49,9 @@
                 padding: 20px;
                 color: white;
             }
-            .main1{
-                background-color: blanchedalmond;
+            .main1 h2{
+             color: blue;
+             text-align: center;
             }
             .cards{
                 border: 1px solid black;
@@ -80,6 +82,9 @@
             .carousel-design{
               background-color: blue;
             }
+            .carousel-design h2{
+              color: white;
+            }
             .tutorial-section{
               background-color: burlywood;
               padding: 25px;
@@ -103,6 +108,18 @@
               
               text-align: center;
             }
+            .dotted-hr{
+              border: 2px dotted blue;
+              border-bottom: none;
+              text-align: center;
+              width: 50px;
+            }
+            .dotted-hr1{
+              border: 2px dotted white;
+              border-bottom: none;
+              text-align: center;
+              width: 50px;
+            }
             .book1{
               color: red;
             }
@@ -113,11 +130,18 @@
     height: 50px;
     
 }
+
 .footer p{
     text-align: center;
     padding-top: 10px;
 }
-        @media screen and (max-width: 720px){
+.suhan{
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 720px){
   .footer{
       font-size: 11px;
       padding-top: 8px;
@@ -142,13 +166,13 @@
                       <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-center" href="#">About Me</a>
+                      <a class="nav-link text-center" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link text-center" href="#">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Tutorials</a>
+                        <a class="nav-link text-center" href="#get-in-touch">Get In Touch</a>
                       </li>
                     
                   </ul>
@@ -157,45 +181,20 @@
                <div class="design">
                 <h3 class="text-center stl">Learn something special!!!</h3>
                 <button class="text-center mr-2 bg-primary bg-outline-secondary text-white"><i class="fas fa-download download1 mr-2"></i>Download</button> 
-                <button class="text-center bg-primary bg-outline-secondary text-white"><i class="fab fa-youtube Youtube mr-2"></i>Youtube</button>
+               <a href="https://www.youtube.com/channel/UCvbQvxfBBYVJHGJxz6d8CLQ" target="blank"><button class="text-center bg-primary bg-outline-secondary text-white"><i class="fab fa-youtube Youtube mr-2"></i>Youtube</button></a> 
                 
                </div>
           </div>
-          <div class="main1">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="cards">
-                     <i class="fas fa-user fa-3x text-primary"></i>
-                     <h3>Shahanur</h3>
-                     <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident ullam officia numquam cupiditate, illo assumenda?</P>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                 <div class="cards">
-                  <i class="fas fa-user fa-3x text-primary"></i>
-                  <h3>Fahmida</h3>
-                  <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident ullam officia numquam cupiditate, illo assumenda?</P>
-                 </div>
-             </div>
-
-             <div class="col-lg-4">
-                 <div class="cards">
-                  <i class="fas fa-user fa-3x text-primary"></i>
-                  <h3>Mizanur</h3>
-                  <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident ullam officia numquam cupiditate, illo assumenda?</P>
-                 </div>
-             </div>
-            </div>
-        </div>
+      
             <div class="carousel-design">
-              <h3 class="text-center">Feedback</h3>
-              <hr class="dotted-hr">
+              <h2 class="text-center p-3" id="about-us">Our Team Member</h2>
+              <hr class="dotted-hr1">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner text-center p-5">
                   <div class="carousel-item active">
-                    <h2 class="mb-3">Shahanur</h2>
+                    <h4 class="mb-3 text-white">Shahanur</h4>
                     <img class="rounded-circle" style="width: 100px;" src="Img.jpg" alt="Suhan">
+                     <h6 class="text-white">Chief Officer</h6>
                   </div>
                   <div class="carousel-item">
                     <h2 class="mb-3">Shahanur</h2>
@@ -216,37 +215,27 @@
                 </a>
               </div>
             </div>
-            <div class="about-me-section bg-primary">
-                 <h2 class="text-center text-white">About Me</h2>
+            <div class="about-me-section">
+                 <h2 class="text-center text-primary p-3" id="get-in-touch">Get In Touch</h2>
                  <hr class="dotted-hr mb-0">
                 <div class="row">
                   <div class="col-lg-12 p-5 text-white">
-                    <form action="mailto:suhan.190617@s.pust.ac.bd" method="post" enctype="text/plain" class="was-validated">
-                      <div class="form-group w-50 m-auto">
-                        <label for="fullname">Fullname</label>
-                      <input type="text" class="form-control" name="fullname" required>
-                      <div class="valid-feedback text-white">Valid</div>
-                      <div class="invalid-feedback text-white">Please enter a valid fullname before submitting the form</div>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-primary">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-primary">We'll never share your email with anyone else.</div>
                       </div>
-                      <div class="form-group w-50 m-auto">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" required>
-                        <div class="valid-feedback text-white">Valid</div>
-                        <div class="invalid-feedback text-light">Please enter a valid email before submitting the form</div>
-                        </div>
-
-                        <div class="form-group w-50 m-auto">
-                          <label for="message">Message</label>
-                           <textarea name="message" id="" style="resize: none;" class="form-control" cols="30" rows="4"></textarea>
-                          </div>
-                          <div class="form-group text-center p-4">
-                            <button type="submit" class="bg-white text-primary bg-outline-success mr-3" value="submit">Submit</button>
-                            <button type="reset" class="bg-white text-primary bg-outline-warning" value="reset">Reset</button>
-
-                          </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
                       </div>
-                    
-                 </form>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-primary" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                   </div>
                 </div>
             </div>
@@ -307,10 +296,10 @@
              
             </div>
             
-          <div class="footer">
+            <div class="footer">
             
-            <p>Copyright &copy; 2021 Suhan. All rights reserved.</p>
-        </div>
+              <p>Copyright &copy; 2021 Suhan. All rights reserved.</p>
+          </div>
         
    </div>
 
